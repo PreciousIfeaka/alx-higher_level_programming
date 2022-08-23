@@ -1,0 +1,1 @@
+checks an integer type

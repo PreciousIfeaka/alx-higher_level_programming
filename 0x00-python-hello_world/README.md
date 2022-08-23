@@ -4,3 +4,4 @@ prints a non format string
 prints a number using string format
 prints a float using string format
 prints a string without format
+concatenated two strings

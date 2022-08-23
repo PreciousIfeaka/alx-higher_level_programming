@@ -7,3 +7,4 @@ prints a string without format
 concatenated two strings
 striped a string
 contcatenate and split string
+imports the Zen of Python

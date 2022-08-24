@@ -8,3 +8,4 @@ a function that prints the power of a number to another
 a function that returns last digit
 created a loop with strings inclusive
 prints non repeating combo
+implements islower

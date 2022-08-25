@@ -9,3 +9,4 @@ a function that returns last digit
 created a loop with strings inclusive
 prints non repeating combo
 implements islower
+converts to upper case

@@ -11,3 +11,4 @@ prints non repeating combo
 implements islower
 converts to upper case
 alternates upper and lower case letters
+removes an indexed character

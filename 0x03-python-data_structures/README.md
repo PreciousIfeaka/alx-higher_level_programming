@@ -8,3 +8,4 @@ prints a matrix
 a function that adds tuple elements of same index
 prints the length of a sentence and its first character
 a function that returns the maximum integer element from a list
+a function that checks if the members of a list are divisible by 2

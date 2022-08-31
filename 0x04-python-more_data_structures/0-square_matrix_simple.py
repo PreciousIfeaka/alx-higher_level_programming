@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    myopia = list(map(lambda x: x, map(
-        lambda x: [x[0] ** 2, x[1] ** 2, x[2] ** 2], matrix)))
-    return myopia
+    squares = []
+    for line in matrix:
+        squares.append([ele**2 for ele in line])
+    return squares

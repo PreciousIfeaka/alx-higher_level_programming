@@ -4,3 +4,4 @@ sums unique elements
 finds common element(s) in two sets
 prints unique elements of both sets
 computes the number of keys in a dictionary
+prints a sorted dictionary

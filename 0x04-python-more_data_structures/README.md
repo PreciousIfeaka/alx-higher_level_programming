@@ -7,3 +7,4 @@ computes the number of keys in a dictionary
 prints a sorted dictionary
 updates a dictionary
 deletes an existing key from a dictionary
+creates a dictionary whose values are double their former values

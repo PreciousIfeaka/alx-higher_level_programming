@@ -6,3 +6,4 @@ prints unique elements of both sets
 computes the number of keys in a dictionary
 prints a sorted dictionary
 updates a dictionary
+deletes an existing key from a dictionary

@@ -6,7 +6,6 @@ This module creates a square class.
 
 class Square:
     """This creates a class and defines it with attributes.
-    
     Attributes:
     size(int): An integer that defines the square dimensions.
     """

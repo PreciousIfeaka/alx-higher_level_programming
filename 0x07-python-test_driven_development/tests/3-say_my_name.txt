@@ -1,0 +1,49 @@
+=========================
+Testing 3-say_my_name.py
+=========================
+
+This module tests the function ```say_my_name()``` with all possible test cases
+
+==========================
+Importing the function
+==========================
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+
+The following test cases are checked:
+
+1) When both parameters are strings
+
+	>>> say_my_name("John", "Snow")
+	My name is John Snow
+
+	>>> say_my_name("James Dean", "Sugar")
+	My name is James Dean Sugar
+
+2) If no last name is provided, it only returns first name
+
+	>>> say_my_name("Phoebe")
+	My name is Phoebe 
+
+3)If Either names is not a string, raise type error
+
+	>>> say_my_name(6, "Phoebe")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name(["Junkey", "Bravo"], "Jannet")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+4) If None is provided
+
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+5) If nothing is provided
+
+	>>> say_my_name()
+	Traceback (most recent call last):
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'

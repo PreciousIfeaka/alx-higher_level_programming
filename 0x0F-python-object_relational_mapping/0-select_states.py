@@ -20,4 +20,3 @@ if __name__ == "__main__":
             print("({}, '{}')".format(row[0], row[1]))
         cursor.close()
         con.close()
-

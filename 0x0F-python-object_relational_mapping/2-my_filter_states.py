@@ -17,7 +17,8 @@ if __name__ == "__main__":
     row = cur.fetchall()
     if row is not None:
         for column in row:
-            print(column)
+            if column[1] == argv[4]:
+                print(column)
 
         """Closing cursor and database connection"""
         cur.close()

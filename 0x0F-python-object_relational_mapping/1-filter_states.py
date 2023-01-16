@@ -11,8 +11,8 @@ if __name__ == "__main__":
         host="localhost", port=3306, user=argv[1],
         password=argv[2], database=argv[3])
     cursor = con.cursor()
-    cursor.execute(
-            "SELECT id, name FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC")
+    sql = "SELECT * FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC"
+    cursor.execute(sql)
     db = cursor.fetchall()
     if db is not None:
         for row in db:

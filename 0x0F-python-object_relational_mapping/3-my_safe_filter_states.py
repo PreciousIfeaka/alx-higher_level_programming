@@ -14,9 +14,8 @@ if __name__ == "__main__":
     sql = "SELECT * FROM states WHERE name LIKE '{:s}'".format(argv[4])
     cus.execute(sql)
     row = cus.fetchall()
-    if row is not None:
-        for column in row:
-            if column[1] == argv[4]:
-                print(column)
-        cus.close()
-        db.close()
+    for column in row:
+        if column[1] == argv[4]:
+            print(column)
+    cus.close()
+    db.close()

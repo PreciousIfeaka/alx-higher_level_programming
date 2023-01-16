@@ -12,7 +12,7 @@ if __name__ == "__main__":
         password=argv[2], database=argv[3])
     cursor = con.cursor()
     cursor.execute(
-            "SELECT id, name FROM states WHERE name LIKE 'n%' ORDER BY id ASC")
+            "SELECT id, name FROM states WHERE BINARY name LIKE 'N%' ORDER BY id ASC")
     db = cursor.fetchall()
     if db is not None:
         for row in db:

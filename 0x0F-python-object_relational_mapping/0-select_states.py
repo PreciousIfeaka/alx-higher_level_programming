@@ -17,7 +17,7 @@ if __name__ == "__main__":
     db = cursor.fetchall()
     if db is not None:
         for row in db:
-            print("({}, '{}')".format(row[1], row[0]))
+            print("({}, '{}')".format(row[0], row[1]))
         cursor.close()
         con.close()
 

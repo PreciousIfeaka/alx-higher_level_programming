@@ -18,6 +18,8 @@ if __name__ == "__main__":
     citylist = []
     for city in cities:
         citylist.append(city[0])
+    if len(citylist) == 0:
+        print()
     for place in citylist:
         if place == citylist[-1]:
             print(place)

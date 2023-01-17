@@ -19,6 +19,6 @@ if __name__ == "__main__":
     session = Session()
     state = session.query(State).first()
     if not state:
-        print("Nothing\n")
+        print("Nothing")
     print("{}: {}".format(state.id, state.name))
     session.close()

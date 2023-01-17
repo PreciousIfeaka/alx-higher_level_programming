@@ -15,7 +15,6 @@ if __name__ == "__main__":
     cus.execute(sql)
     row = cus.fetchall()
     for column in row:
-        if column[1] == argv[4]:
-            print(column)
+        print(column)
     cus.close()
     db.close()

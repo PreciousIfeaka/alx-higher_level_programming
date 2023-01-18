@@ -18,10 +18,11 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     state_s = session.query(State).all()
-    for state in state_s:
-        if state.name == argv[4]:
-            print(state.id)
-            break
-    if argv[4] != state.name:
+    if State is not None:
+        for state in state_s:
+            if state.name == argv[4]:
+                print(state.id)
+                break
+    if argv[4] != state.name or State is None:
         print("Not found")
     session.close()

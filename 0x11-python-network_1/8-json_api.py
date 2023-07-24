@@ -14,10 +14,9 @@ if __name__ == '__main__':
     else:
         payload = {'q': ""}
 
+    response = requests.post(url, data=payload)
     try:
-        response = requests.post(url, data=payload)
         r = response.json()
-        jsoned = 'application/json'
         if r = {}:
             print("No result")
         else:

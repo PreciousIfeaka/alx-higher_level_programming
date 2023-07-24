@@ -9,19 +9,19 @@ if __name__ == '__main__':
     import requests
 
     url = 'http://0.0.0.0:5000/search_user'
-    if len(argv) == 1:
-        data = {'q': ""}
+    if len(argv) == 2:
+        payload = {'q': argv[1]}
     else:
-        data = {'q': argv[1]}
+        payload = {'q': ""}
 
     try:
-        resp = requests.post(url, json=data)
+        r = requests.post(url, json=payload)
         jsoned = 'application/json'
-        if resp.headers.get('content-type') == jsoned and len(resp.text) == 0:
+        if r.headers.get('content-type') == jsoned and len(r) == 0:
             print("No result")
-        elif resp.headers.get('content-type') == jsoned:
-            name = resp.text.get('name')
-            identity = resp.text.get('id')
+        elif r.headers.get('content-type') == jsoned:
+            name = r.get('name')
+            identity = r.get('id')
             print('[{}] {}'.format(identity, name))
         else:
             print("Not a valid JSON")

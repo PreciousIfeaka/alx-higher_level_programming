@@ -12,7 +12,7 @@ if __name__ == '__main__':
         try:
             print('Body response:')
             print('\t- type: {}'.format(type(content)))
-            print('\t - content: {}'.format(content))
-            print('\t - utf8 content: {}'.format(content.decode('utf-8')))
+            print('\t- content: {}'.format(content))
+            print('\t- utf8 content: {}'.format(content.decode('utf-8')))
         except Exception as e:
             pass

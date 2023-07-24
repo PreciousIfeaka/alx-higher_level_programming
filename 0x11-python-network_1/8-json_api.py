@@ -15,11 +15,12 @@ if __name__ == '__main__':
         payload = {'q': ""}
 
     try:
-        r = requests.post(url, json=payload)
+        response = requests.post(url, data=payload)
+        r = response.json()
         jsoned = 'application/json'
-        if r.headers.get('content-type') == jsoned and len(r) == 0:
+        if r = {}:
             print("No result")
-        elif r.headers.get('content-type') == jsoned:
+        elif response.headers.get('content-type') == jsoned:
             name = r.get('name')
             identity = r.get('id')
             print('[{}] {}'.format(identity, name))

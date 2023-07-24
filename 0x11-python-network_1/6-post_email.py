@@ -13,7 +13,7 @@ if __name__ == '__main__':
     data = {'email': sys.argv[2]}
 
     try:
-        response = request.post(url, data)
+        response = requests.post(url, data=data)
         print(response.text)
     except Exception as e:
         pass

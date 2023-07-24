@@ -15,7 +15,7 @@ if __name__ == '__main__':
         data = {'q': argv[1]}
 
     try:
-        resp = requests.post(url, data=data)
+        resp = requests.post(url, json=data)
         jsoned = 'application/json'
         if resp.headers.get('content-type') == jsoned and len(resp.text) == 0:
             print("No result")

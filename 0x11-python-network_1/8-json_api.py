@@ -20,11 +20,9 @@ if __name__ == '__main__':
         jsoned = 'application/json'
         if r = {}:
             print("No result")
-        elif response.headers.get('content-type') == jsoned:
+        else:
             name = r.get('name')
             identity = r.get('id')
             print('[{}] {}'.format(identity, name))
-        else:
-            print("Not a valid JSON")
-    except Exception as e:
-        pass
+    except ValueError:
+        print("Not a valid JSON")

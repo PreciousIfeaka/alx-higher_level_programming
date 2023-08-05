@@ -9,7 +9,7 @@ if __name__ == "__main__":
     import requests
     from requests.auth import HTTPBasicAuth
 
-    url = 'https://api.github.com/users/{}'.format(argv[1])
+    url = 'https://api.github.com/user'
     response = requests.get(url, auth=HTTPBasicAuth(argv[1], argv[2]))
     json = response.json()
     print(json.get('id'))

@@ -5,12 +5,12 @@ with the letter as a parameter
 """
 
 if __name__ == '__main__':
-    from sys import argv
+    import sys
     import requests
 
     url = 'http://0.0.0.0:5000/search_user'
-    if len(argv) == 2:
-        payload = {'q': argv[1]}
+    if len(sys.argv) == 2:
+        payload = {'q': sys.argv[1]}
     else:
         payload = {'q': ""}
 

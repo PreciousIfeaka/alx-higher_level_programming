@@ -10,7 +10,8 @@ if __name__ == '__main__':
 
     url = 'http://0.0.0.0:5000/search_user'
     if len(sys.argv) == 2:
-        payload = {'q': sys.argv[1]}
+        q = sys.argv[1]
+        payload = {'q': q}
     else:
         payload = {'q': ""}
 
@@ -23,5 +24,5 @@ if __name__ == '__main__':
             name = r.get('name')
             identity = r.get('id')
             print('[{}] {}'.format(identity, name))
-    except ValueError:
+    except Exception as e:
         print("Not a valid JSON")

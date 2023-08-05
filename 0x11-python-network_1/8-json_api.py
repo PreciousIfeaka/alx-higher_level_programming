@@ -18,11 +18,11 @@ if __name__ == '__main__':
     response = requests.post(url, data=payload)
     try:
         r = response.json()
-        if r = {}:
+        if r == {}:
             print("No result")
         else:
             name = r.get('name')
             identity = r.get('id')
             print('[{}] {}'.format(identity, name))
-    except Exception as e:
+    except Exception as g:
         print("Not a valid JSON")

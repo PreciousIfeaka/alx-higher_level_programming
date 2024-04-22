@@ -1,0 +1,1 @@
+This directory is for everything that pertains to my alx learning on JS web scrapping.
